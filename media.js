@@ -12,7 +12,7 @@
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
 
-var nota1= 5.5
+var nota1= 5.6
 var nota2= 1.2
 var nota3= 3.9
 var nota4= 1.1
