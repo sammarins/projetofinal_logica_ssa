@@ -10,28 +10,9 @@
     5. Se a nota for entre 7.1 e 9.9, mostre na tela: "Notão! Sua média é {nota}!"
     6. Se a nota for 10, mostre na tela: 
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
-*/
 
-var nota1= 5.6
-var nota2= 1.2
-var nota3= 3.9
-var nota4= 1.1
-var media = (nota1 + nota2 + nota3 + nota4) / 4;
+      */
 
-if (media === 0){
-console.log ("vc zerou a prova ");
-
-} else if (media > 0.1 && media < 3){
-console.log ("caramba, deu ruim, voce obteve media " + media + "estude mais e tente novamente" );
-} else if (media >= 3.1 && media <= 5.9){
-console.log (" voce obteve " + media + "falta pouco" );
-} else if (media >=6 && media < 7){
-console.log ("voce está na media com " + media );
-} else if (media >= 7.1 && media <= 9.9){
-console.log ("notão, sua media é " + media );
-} else {
-  console.log ("uau, voce quebrou e amassou!! sua média é " + media );
-}
 
 
 
@@ -41,8 +22,27 @@ function calcularMedia() {
   const nota2 = parseFloat(document.getElementById("nota2").value);
   const nota3 = parseFloat(document.getElementById("nota3").value);
   const nota4 = parseFloat(document.getElementById("nota4").value);
-
+  
+  const media = (nota1 + nota2 + nota3 + nota4) / 4;
+  
   let mensagem = "";
+  
+  if (media === 0) {
+    mensagem = " Você zerou a prova "  
+  } else if (media >= 0.1 && media <= 3){
+    mensagem = "Caramba, deu ruim, você obteve média " + media + ", estude mais e tente novamente"; 
+  } else if (media >= 3.1 && media <= 5.9){
+    mensagem = " Você obteve " + media + ", falta pouco";  
+  } else if (media >=6 && media < 7){
+    mensagem = "Você está na média com " + media;
+  } else if (media >= 7.1 && media <= 9.9){
+    mensagem = "Notão, sua média é " + media ;
+  } else {
+    mensagem = "Uau, você quebrou e amassou!! Sua média é " + media ;
+    } 
+    
+
+
   // evite mexer no código acima!
 
   
